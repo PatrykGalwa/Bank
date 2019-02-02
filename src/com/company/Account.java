@@ -4,7 +4,7 @@ public abstract class Account extends Bank {
     private String firstName;
     private String lastName;
     private double accNumber;
-    private double balance = 0L;
+    private double balance = 100L;
     private boolean condition;
     private String typeAccount;
     private String testowy;
