@@ -1,10 +1,10 @@
 package com.company;
 
-public abstract class Account {
+public abstract class Account extends Bank {
     private String firstName;
     private String lastName;
     private long accNumber;
-    private long balance;
+    private long balance = 0L;
     private boolean condition;
 
 
@@ -15,7 +15,7 @@ public abstract class Account {
         this.balance = balance;
         this.condition = condition;
     }
-
+    
     public long getBalance() {
         return balance;
     }
