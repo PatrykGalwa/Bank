@@ -4,7 +4,7 @@ public abstract class Account extends Bank {
     private String firstName;
     private String lastName;
     private double accNumber;
-    private double balance = 100L;
+    private double balance = 0.0;
     private boolean condition;
     private String typeAccount;
     private String testowy;
@@ -17,8 +17,19 @@ public abstract class Account extends Bank {
         this.condition = condition;
     }
 
+    public double deposit(double a) {
+        return this.balance += a;
+    }
+    public double withdraw(double a) {
+        if (a <= this.balance) {
+            return this.balance -= a;
+        } else {
+            return 0;
+        }
+    }
+
     public double addBonus(double a) {
-        return balance += a;
+        return this.balance += a;
     }
     
     public double getBalance() {
