@@ -4,7 +4,7 @@ public abstract class Account {
     private String firstName;
     private String lastName;
     private long accNumber;
-    private  long balance;
+    private long balance;
     private boolean condition;
 
 
