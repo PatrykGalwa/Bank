@@ -36,10 +36,6 @@ public abstract class Account extends Bank {
         return balance;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
     public boolean isCondition() {
         return condition;
     }
