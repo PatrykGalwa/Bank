@@ -6,7 +6,7 @@ public abstract class Account extends Bank {
     private double accNumber;
     private double balance = 0L;
     private boolean condition;
-
+    private String typeAccount;
 
     public Account(String firstName, String lastName, double accNumber, double balance, boolean condition) {
         this.firstName = firstName;
@@ -58,6 +58,10 @@ public abstract class Account extends Bank {
 
     public void setAccNumber(double accNumber) {
         this.accNumber = accNumber;
+    }
+
+    public String privateAccount(String value){
+        return this.typeAccount = value;
     }
 
 }
