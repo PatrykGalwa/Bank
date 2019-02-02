@@ -3,24 +3,28 @@ package com.company;
 public abstract class Account extends Bank {
     private String firstName;
     private String lastName;
-    private long accNumber;
-    private long balance = 0L;
+    private double accNumber;
+    private double balance = 0L;
     private boolean condition;
 
 
-    public Account(String firstName, String lastName, long accNumber, long balance, boolean condition) {
+    public Account(String firstName, String lastName, double accNumber, double balance, boolean condition) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.accNumber = accNumber;
         this.balance = balance;
         this.condition = condition;
     }
+
+    public double addBonus(double a) {
+        return balance += a;
+    }
     
-    public long getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(long balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
@@ -48,11 +52,11 @@ public abstract class Account extends Bank {
         this.lastName = lastName;
     }
 
-    public long getAccNumber() {
+    public double getAccNumber() {
         return accNumber;
     }
 
-    public void setAccNumber(long accNumber) {
+    public void setAccNumber(double accNumber) {
         this.accNumber = accNumber;
     }
 
