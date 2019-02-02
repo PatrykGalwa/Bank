@@ -7,6 +7,7 @@ public abstract class Account extends Bank {
     private double balance = 0L;
     private boolean condition;
     private String typeAccount;
+    private String testowy;
 
     public Account(String firstName, String lastName, double accNumber, double balance, boolean condition) {
         this.firstName = firstName;
